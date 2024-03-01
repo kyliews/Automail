@@ -26,3 +26,17 @@ Delay Between Emails: To avoid potential issues with email providers and adhere 
 Console Output: Provides informative console output, including confirmation messages for each email sent and the status of the SMTP connection.
 
 Graceful Termination: The script terminates the SMTP connection after all emails are sent, ensuring proper closure.
+
+How to use:
+
+Clone the repository: https://github.com/kyliews/Dashboard
+
+Navigate to the project directory: cd Dashboard
+
+In the app.py file, locate line 5, which contains the Excel file reading.
+
+Change the path of the Excel file to reflect the location of your repository.
+
+df = pd.read_excel(r'your path\Dashboard\assets\database1.xlsx')
+
+Run the application: streamlit run app.py
