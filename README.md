@@ -32,9 +32,10 @@ How to use:
 Clone the repository: https://github.com/kyliews/Automail
 
 Navigate to the project directory: cd Automail/back/db.py
+
 Update the following parameters based on your configuration:
-login: Your email address.
-senha: Your email password.
+
+login: Your email address. - senha: Your email password.
 
 Modify the subject of the email in message ['Subject'].
 
