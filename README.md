@@ -1,4 +1,4 @@
-This Python script automates the sending of emails to a list of recipients using an HTML template. It is designed to read email addresses from an Excel file, personalize the email content with an HTML template, send the emails via an Outlook SMTP server, and sleep 
+Automail automates the sending of emails to a list of recipients using an HTML template. It is designed to read email addresses from an Excel file, personalize the email content with an HTML template, send the emails via an Outlook SMTP server, and sleep through each sending, to avoiding spam.
 
 Project Structure:
 
@@ -29,14 +29,22 @@ Graceful Termination: The script terminates the SMTP connection after all emails
 
 How to use:
 
-Clone the repository: https://github.com/kyliews/Dashboard
+Clone the repository: https://github.com/kyliews/Automail
 
-Navigate to the project directory: cd Dashboard
+Navigate to the project directory: cd Automail/back/db.py
+Update the following parameters based on your configuration:
+login: Your email address.
+senha: Your email password.
 
-In the app.py file, locate line 5, which contains the Excel file reading.
+Modify the subject of the email in message ['Subject'].
+
+Customize the HTML content in template.html to match the desired email structure and message.
 
 Change the path of the Excel file to reflect the location of your repository.
 
-df = pd.read_excel(r'your path\Dashboard\assets\database1.xlsx')
+df = pd.read_excel(r'your path\Automail/src/enterprises.xlsx')
 
-Run the application: streamlit run app.py
+Adjust the sleep duration in the loop (sleep(60)) based on the email service provider's rate limits.
+
+Run the application: db.py
+
